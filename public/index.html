@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset=utf-8>
+	<title>70-480 Certification Training</title>
+	<style>
+		header,footer,section,article {
+		    border:1px solid grey;margin:5px;margin-bottom:15px;padding:8px;background-color:white;
+		}
+		header,footer {
+		    color:white;background-color:#444;margin-bottom:5px;
+		}
+		section {
+		    background-color:#ddd;
+		}
+		nav ul  {
+		    margin:0;padding:0;
+		}
+		nav ul li {
+		    display:inline; margin:5px;
+		}
+		canvas {
+			border: 1px solid #000;
+			position: relative;
+			left: 50px;
+			top: -10px;
+		}
+		.image {
+			float: right;
+			/*margin: 10px;*/
+			/*display: none;*/
+		}
+		li:nth-child(odd) {
+			background: darkgreen;
+		}
+		article>p:nth-of-type(odd) {
+			background: lightblue;
+		}
+		input {
+			display: block;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color:red">My Articles</h1>
+	<h2 id="geoLocation"></h2>
+	<h2 id="localStorage"></h2>
+	<h2 id="sessionStorage"></h2>
+	<article>
+		
+	</article>
+	<article>
+		<header>
+			<h2>Article 1</h2>
+		</header>
+		<img id="image1" class="image" src="image.jpg" draggable="true" ondragstart="drag(event)" />
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rem voluptate voluptas vero enim id illo adipisci, dignissimos dolores ab, optio mollitia soluta! Fugiat illo, magni praesentium vitae quibusdam ex.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nam, dolor placeat molestias deleniti. Eveniet eum deleniti molestiae quasi beatae non consequuntur, commodi facere ipsa architecto ullam tenetur quidem, similique.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illum quia, nobis reiciendis accusamus optio necessitatibus vitae, fugiat numquam voluptate perferendis nesciunt iure consectetur tenetur sed! Veniam non aperiam ducimus.</p>
+	<aside>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quo dolorem officia, laborum, beatae dicta eaque vel iusto similique voluptatem eius atque voluptate magni eos repellendus enim deleniti fuga, voluptas.
+	</aside>
+	</article>
+	<article>
+		<header>
+			<h2>Article 2</h2>
+		</header>
+		<div id="image2" style="width:107px;height:90px;border:1px solid #000;float:right;margin:10px" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quod architecto culpa illo recusandae maxime ipsum magni atque fugit sapiente, molestias repellendus vitae doloremque, expedita iure earum aliquid nulla reiciendis.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nisi error fuga consectetur eius a, deserunt dolores repudiandae atque commodi aliquam ullam cumque cum quaerat laborum molestiae quasi nesciunt itaque.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. In voluptatem, odio veritatis vel necessitatibus, architecto natus, consectetur pariatur fugiat repellendus enim unde, doloremque odit adipisci eveniet iusto perferendis aut quia.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, necessitatibus reiciendis quibusdam laudantium quis veritatis cumque minus vel molestiae id, eaque sed similique beatae architecto. Porro, quasi dolorem dolores tempora!</p>
+	</article>
+	<article>
+		<canvas id="demoCanvas" width="900" height="300">
+			
+		</canvas>
+	</article>
+	<article>
+		<svg width="900" height="300">
+			<circle cx="50" cy="50" r="40" stroke="green" stroke-width="5" fill="blue" />
+			<rect x="200" y="50" width="75" height="50" style="fill:rgb(0, 128, 128);stroke-width:5;stroke:rgb(0,0,0)" />
+		</svg>
+	</article>
+	<article>
+		<p id="array1" />
+		<p id="array2" />
+		<p id="array3" />
+		<p id="array4" />
+		<p id="array5" />
+	</article>
+	<article>
+		<button id="websocket">Web Sockets</button>
+	</article>
+	<article>
+		<button onclick="startWorker()">Start Worker</button>
+		<button onclick="stopWorker()">Stop Worker</button>
+		<div id="webworker"></div>
+	</article>
+	<article>
+		Text<input type="text" name="text" />
+		Date<input type="date" name="date" min="2000-01-01" />
+		Color<input type="color" name="color" />
+		Range<input type="range" name="range" min="0" max="1000" step="25" />
+		Month<input type="month" name="month" />
+		Week<input type="week" name="week" />
+		Time<input type="time" name="time" />
+		Datetime<input type="datetime" name="datetime" />
+		Datetime Local<input type="datetime-local" name="datetimelocal" />
+		Email<input type="email" name="email" autocomplete="true" />
+		Search<input type="search" name="search" />
+		Telephone<input type="tel" name="tel" />
+		URL<input type="url" name="url" autocomplete="true" />
+	</article>
+	<article>
+		<div id="xmlData" />
+	</article>
+	<article>
+		<div id="original"></div>
+		<div id="encodeURI"></div>
+		<div id="encodeURIComp"></div>
+	</article>
+	<footer>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet id commodi consequuntur voluptates exercitationem nam nisi hic dolor repellat. Veniam blanditiis, provident dolorem esse maiores numquam laudantium unde modi quia!
+	</footer>
+</body>
+<script src="index.js"></script>
+</html>
